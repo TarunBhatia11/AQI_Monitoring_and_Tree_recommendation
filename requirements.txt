@@ -4,3 +4,4 @@ streamlit-folium
 python-dotenv
 requests
 gunicorn
+flask
