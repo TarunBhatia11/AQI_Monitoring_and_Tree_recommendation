@@ -1,0 +1,76 @@
+:root{
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --accent:#2b7be4;
+  --muted:#666;
+}
+body {
+  margin:0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background:var(--bg);
+  color:#111;
+}
+.container {
+  max-width:1200px;
+  margin:18px auto;
+  padding:16px;
+}
+header h1 { margin:0; }
+.search-row {
+  display:flex;
+  gap:8px;
+  margin:12px 0 18px 0;
+  align-items:center;
+}
+.search-row input {
+  flex:1;
+  padding:10px 12px;
+  font-size:16px;
+  border-radius:6px;
+  border:1px solid #ddd;
+  background:white;
+}
+.search-row button {
+  padding:10px 16px;
+  background:var(--accent);
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+.search-row .status { margin-left:8px; font-size:14px; color:var(--muted); }
+
+main { display:flex; gap:16px; }
+.left { flex:1; }
+.right { flex:1.2; }
+
+.stationsContainer { display:flex; flex-direction:column; gap:12px; margin-top:8px; }
+.stationCard {
+  background:var(--card);
+  border-radius:8px;
+  padding:12px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.06);
+}
+.stationCard h3 { margin:0 0 6px 0; font-size:16px; }
+.meta { font-size:14px; color:var(--muted); margin-bottom:8px; }
+.pollutants { font-size:14px; }
+.pollutants div { margin:2px 0; }
+.badge { display:inline-block; padding:4px 8px; border-radius:6px; font-weight:600; background:#eee; margin-right:6px; font-size:13px; }
+
+
+.tree-box {
+    background: #eef7ee;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #c9e3c9;
+}
+
+.tree-group {
+    background: #ffffff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+

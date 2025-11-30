@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>AIRSONA — AQI Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/static/style.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 AIRSONA — AQI Search</h1>
+      <p>Search a location to view AQI stations and pollutant data.</p>
+    </header>
+
+    <div class="search-row">
+      <input id="q" type="text" placeholder="e.g., Kanpur, Delhi, Los Angeles" />
+      <button id="searchBtn">Search</button>
+      <div id="status" class="status"></div>
+    </div>
+
+    <main>
+      <section id="left" class="left">
+        <h2>Stations</h2>
+        <div id="stationsContainer" class="stationsContainer">
+          <!-- station cards will be injected here -->
+        </div>
+      </section>
+
+      <section id="right" class="right">
+        <h2>Map</h2>
+        <div id="map" style="height: 600px;"></div>
+
+
+
+        
+        <button id="treeBtn" class="btn">Tree Recommendation</button>
+        <div id="treeResults"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
